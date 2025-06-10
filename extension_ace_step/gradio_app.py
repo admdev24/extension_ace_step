@@ -238,12 +238,14 @@ def ui():
             outputs=[model_info],
             api_name="ace_step_reload_model",
         )
-
+    from acestep.pipeline_ace_step import ACEStepPipeline
+    from acestep.data_sampler import DataSampler
+    data_sampler = DataSampler()
     create_text2music_ui(
         gr=gr,
         text2music_process_func=ace_step_infer_decorated,
-        sample_data_func=sample_data,
-        load_data_func=load_data,
+        sample_data_func=sample_data.sample,
+        load_data_func=load_data.load_json,
     )
 
 
