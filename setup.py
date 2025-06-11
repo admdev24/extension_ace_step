@@ -8,7 +8,7 @@ setuptools.setup(
     packages=setuptools.find_namespace_packages(),
     version="0.4.0",
 	author="rsxdalv",
-	description="AceStep: A Step Towards Music - Vocal Generation.",
+	description="ACE-Step: A Step Towards Music - Vocals Generation.",
 	url="https://github.com/rsxdalv/extension_ace_step",
     project_urls={},
     scripts=[],
